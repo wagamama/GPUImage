@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		0DF3FA2B14FA00C9006AF7D9 /* GPUImageVignetteFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF3FA2914FA00C9006AF7D9 /* GPUImageVignetteFilter.h */; };
 		0DF3FA2C14FA00C9006AF7D9 /* GPUImageVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF3FA2A14FA00C9006AF7D9 /* GPUImageVignetteFilter.m */; };
+		3217F3A9197792260067275F /* GPUImageCIFilterWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3217F3A7197792260067275F /* GPUImageCIFilterWrapper.h */; };
+		3217F3AA197792260067275F /* GPUImageCIFilterWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3217F3A8197792260067275F /* GPUImageCIFilterWrapper.m */; };
 		4308B1D715F7EED30014437A /* GPUImageNormalBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4308B1D515F7EED10014437A /* GPUImageNormalBlendFilter.h */; };
 		4308B1D815F7EED30014437A /* GPUImageNormalBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4308B1D615F7EED20014437A /* GPUImageNormalBlendFilter.m */; };
 		4686952F155AACAC0060BA43 /* GPUImageSourceOverBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4686952D155AACAC0060BA43 /* GPUImageSourceOverBlendFilter.h */; };
@@ -697,6 +699,8 @@
 		0D9D91AE15011CA200A5BC83 /* GPUImageGaussianSelectiveBlurFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageGaussianSelectiveBlurFilter.m; path = Source/GPUImageGaussianSelectiveBlurFilter.m; sourceTree = SOURCE_ROOT; };
 		0DF3FA2914FA00C9006AF7D9 /* GPUImageVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageVignetteFilter.h; path = Source/GPUImageVignetteFilter.h; sourceTree = SOURCE_ROOT; };
 		0DF3FA2A14FA00C9006AF7D9 /* GPUImageVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageVignetteFilter.m; path = Source/GPUImageVignetteFilter.m; sourceTree = SOURCE_ROOT; };
+		3217F3A7197792260067275F /* GPUImageCIFilterWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageCIFilterWrapper.h; path = Source/GPUImageCIFilterWrapper.h; sourceTree = SOURCE_ROOT; };
+		3217F3A8197792260067275F /* GPUImageCIFilterWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageCIFilterWrapper.m; path = Source/GPUImageCIFilterWrapper.m; sourceTree = SOURCE_ROOT; };
 		4308B1D515F7EED10014437A /* GPUImageNormalBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageNormalBlendFilter.h; path = Source/GPUImageNormalBlendFilter.h; sourceTree = SOURCE_ROOT; };
 		4308B1D615F7EED20014437A /* GPUImageNormalBlendFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageNormalBlendFilter.m; path = Source/GPUImageNormalBlendFilter.m; sourceTree = SOURCE_ROOT; };
 		4686952D155AACAC0060BA43 /* GPUImageSourceOverBlendFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageSourceOverBlendFilter.h; path = Source/GPUImageSourceOverBlendFilter.h; sourceTree = SOURCE_ROOT; };
@@ -1284,6 +1288,8 @@
 				46A8097716B8A48E000C29ED /* GPUImageTwoInputCrossTextureSamplingFilter.m */,
 				BCBCE9D3159944AB00E0ED33 /* GPUImageBuffer.h */,
 				BCBCE9D4159944AB00E0ED33 /* GPUImageBuffer.m */,
+				3217F3A7197792260067275F /* GPUImageCIFilterWrapper.h */,
+				3217F3A8197792260067275F /* GPUImageCIFilterWrapper.m */,
 				BC1B715D14F4AFFF00ACA2AB /* Color processing */,
 				BCC93A5215031B1700958B26 /* Image processing */,
 				BC1B715E14F4B04800ACA2AB /* Blends */,
@@ -1695,6 +1701,7 @@
 				BC982B7914F098CC0001FF6F /* GPUImageBrightnessFilter.h in Headers */,
 				BC982B7E14F09F980001FF6F /* GPUImageGammaFilter.h in Headers */,
 				BC982B9914F0B34E0001FF6F /* GPUImageSobelEdgeDetectionFilter.h in Headers */,
+				3217F3A9197792260067275F /* GPUImageCIFilterWrapper.h in Headers */,
 				B81521A214F1BA6A00F105F8 /* GPUImageColorMatrixFilter.h in Headers */,
 				BC982BEB14F1CE600001FF6F /* GPUImageDissolveBlendFilter.h in Headers */,
 				BC982BED14F1CE600001FF6F /* GPUImageMultiplyBlendFilter.h in Headers */,
@@ -2210,6 +2217,7 @@
 				BCF1E643156AB332006B155F /* GPUImageRawDataInput.m in Sources */,
 				BCAD4C9F156F0D8F001E50E1 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
 				BCAD4CA4156F0F35001E50E1 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
+				3217F3AA197792260067275F /* GPUImageCIFilterWrapper.m in Sources */,
 				BCAD4D1015718AD2001E50E1 /* GPUImageSingleComponentGaussianBlurFilter.m in Sources */,
 				BCAD4D1515718F9E001E50E1 /* GPUimageDirectionalSobelEdgeDetectionFilter.m in Sources */,
 				BCAD4D1D1571B410001E50E1 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,

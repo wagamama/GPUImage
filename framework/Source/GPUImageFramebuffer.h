@@ -29,6 +29,9 @@ typedef struct GPUTextureOptions {
 @property(readonly) GPUTextureOptions textureOptions;
 @property(readonly) GLuint texture;
 @property(readonly) BOOL missingFramebuffer;
+#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
+@property(readwrite) CVPixelBufferRef renderTarget;
+#endif
 
 // Initialization and teardown
 - (id)initWithSize:(CGSize)framebufferSize;
